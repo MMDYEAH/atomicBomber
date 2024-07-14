@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.WaveOnePassed">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="600.0">
+            <image>
+                <Image url="@icon.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="255.0" fx:id="button" layoutY="35.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="171.0" text="رفتن به مرحله بعد">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

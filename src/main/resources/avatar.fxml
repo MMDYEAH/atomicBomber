@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AvatarController">
+    <children>
+        <MenuBar layoutX="7.0" layoutY="1.0" AnchorPane.bottomAnchor="374.6666666666667" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="حساب کاربری">
+                    <items>
+                        <MenuItem fx:id="s" mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="پروفایل" />
+                <Menu mnemonicParsing="false" text="آواتار" />
+                <Menu mnemonicParsing="false" text="منوی اصلی">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="تنظیمات">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="جدول امتیازات">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <SplitPane dividerPositions="0.5" prefHeight="216.66666666666666" prefWidth="597.3333333333334" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="367.0" prefWidth="455.0">
+               <children>
+                  <ImageView fitHeight="105.0" fitWidth="91.0" layoutX="6.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@plane.png" />
+                     </image>
+                  </ImageView>
+                  <RadioButton fx:id="defaultPlane" layoutX="4.0" layoutY="80.0" mnemonicParsing="false" text="دیفالت" />
+                  <RadioButton fx:id="passengerPlane" layoutX="111.0" layoutY="80.0" mnemonicParsing="false" text="مسافر بری" />
+                  <RadioButton fx:id="warPlane" layoutX="216.0" layoutY="80.0" mnemonicParsing="false" text="جنگنده" />
+                  <ImageView fitHeight="72.0" fitWidth="87.0" layoutX="104.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@kj;jksdnf.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="79.0" fitWidth="105.0" layoutX="204.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Picture1.png" />
+                     </image>
+                  </ImageView>
+                  <RadioButton fx:id="randomPick" layoutX="111.0" layoutY="113.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="106.0" text="انتخاب رندوم" />
+               </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <ImageView layoutX="14.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="681.0" fitWidth="456.0">
+                     <image>
+                        <Image url="@OIG4.NkhVBtXD8K8ipQEwm.jpg" />
+                     </image>
+                  </ImageView>
+                    </children></AnchorPane>
+            </items>
+        </SplitPane>
+        <Button layoutX="335.0" mnemonicParsing="false" onMouseClicked="#goToPointChart" text="جدول امتیازات" />
+        <Button layoutX="273.0" mnemonicParsing="false" onMouseClicked="#goToSetting" text="تنظیمات" />
+        <Button layoutX="196.0" mnemonicParsing="false" onMouseClicked="#goToMainMenu" text="منوی اصلی" />
+        <Button layoutX="153.0" mnemonicParsing="false" onMouseClicked="#goToAvatar" text="آواتار" />
+        <Button layoutX="100.0" mnemonicParsing="false" onMouseClicked="#goToProfile" text="پروفایل" />
+        <Button layoutX="13.0" mnemonicParsing="false" onMouseClicked="#goToLoginMenu" text="حساب کاربری" />
+    </children>
+</AnchorPane>
